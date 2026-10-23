@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gazette of India | Central Gazette Application & Legal Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ashoka: '#0f294a',
+                        ashokaDark: '#08172b',
+                        goldAccent: '#d4af37',
+                        saffron: '#ff9933',
+                        indiaGreen: '#138808'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .serif-heading { font-family: 'Cinzel', serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(15,41,74,0.96) 0%, rgba(8,23,43,0.98) 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Top Alert Notification Bar -->
+    <div class="bg-ashokaDark text-slate-200 text-xs py-2 px-4 border-b border-slate-700">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="bg-amber-500 text-slate-900 font-bold px-2 py-0.5 rounded text-[11px] uppercase tracking-wider">Crucial Rule</span>
+                <span>Mandatory Physical Counter Submission &amp; Govt Fee deposit at Department of Publication, Civil Lines, Delhi.</span>
+            </div>
+            <div class="flex items-center gap-4 text-slate-300">
+                <a href="tel:8118802189" class="hover:text-goldAccent flex items-center gap-1.5"><i class="fa-solid fa-phone text-goldAccent"></i> +91 8118802189</a>
+                <span class="text-slate-600">|</span>
+                <a href="mailto:mr.nkakhand@Gmail.com" class="hover:text-goldAccent flex items-center gap-1.5"><i class="fa-solid fa-envelope text-goldAccent"></i> mr.nkakhand@Gmail.com</a>
+                <span class="text-slate-600">|</span>
+                <span class="hidden sm:inline-flex items-center gap-1 text-slate-400"><i class="fa-solid fa-location-dot text-amber-400"></i> Sawai Madhopur, RJ 322001</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="bg-white sticky top-0 z-40 border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full border-2 border-goldAccent flex items-center justify-center bg-ashoka text-goldAccent text-xl font-bold shadow-sm">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <div>
+                    <div class="text-lg sm:text-xl font-bold tracking-tight text-ashoka serif-heading leading-tight">
+                        THE GAZETTE OF INDIA
+                    </div>
+                    <p class="text-xs text-slate-500 uppercase tracking-widest font-medium">
+                        Central Legal Assistance Desk &bull; Sawai Madhopur (Raj.)
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/918118802189?text=Hello%2C%20I%20want%20to%20apply%20for%20Central%20Gazette%20Service." target="_blank" 
+                   class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2 rounded-lg text-sm transition shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">WhatsApp:</span> 8118802189
+                </a>
+                <a href="#application-form-section" class="bg-ashoka hover:bg-ashokaDark text-amber-300 font-semibold px-4 py-2 rounded-lg text-sm transition border border-goldAccent/30">
+                    Fill Application Form
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-12 px-4 sm:px-6 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-goldAccent/40 text-goldAccent text-xs font-semibold mb-6 uppercase tracking-wider">
+                <i class="fa-solid fa-landmark"></i> Official Central Gazette (Part-IV) Regulatory Advisory
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold serif-heading leading-tight mb-4 text-white">
+                Legal Drafting &amp; Document Kit for <br class="hidden sm:block">
+                <span class="text-amber-400">The Gazette of India (Central Gazette)</span>
+            </h1>
+            <p class="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto font-light leading-relaxed mb-6">
+                Complete, vetted legal formats delivered straight to your email. Under the updated Department of Publication guidelines, 
+                <span class="text-amber-300 font-semibold underline underline-offset-4">the applicant must physically visit the Delhi Civil Lines office in person to submit documents and deposit official government fees at the counter.</span>
+            </p>
+
+            <a href="#application-form-section" class="inline-flex items-center gap-2 bg-goldAccent hover:bg-amber-400 text-ashokaDark font-bold px-6 py-3.5 rounded-xl shadow-lg transition text-base">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>Open Application Form Directly Below</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Pricing / Packages Section -->
+    <section id="pricing" class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="text-xs font-bold uppercase tracking-wider text-ashoka bg-slate-200 px-3 py-1 rounded-full">Transparent Pricing</span>
+            <h2 class="text-2xl sm:text-4xl font-bold text-ashoka serif-heading mt-3">Choose Your Legal Assistance Package</h2>
+            <p class="text-slate-600 text-sm mt-2">Click any button below to directly select the plan and fill your details in the form.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            
+            <!-- Standard Plan: ₹2,500 -->
+            <div class="bg-white rounded-2xl border-2 border-slate-300 shadow-md p-6 sm:p-8 flex flex-col justify-between hover:border-ashoka transition">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wide bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Most Popular</span>
+                        <span class="text-xs font-semibold text-slate-500">Self Physical Submission</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Document Formats Kit &amp; Telephonic Consultation</h3>
+                    <p class="text-xs text-slate-500 mt-1">Complete ready-to-print legal drafts delivered on email + dedicated helpline.</p>
+
+                    <div class="my-6">
+                        <div class="flex items-baseline">
+                            <span class="text-4xl font-extrabold text-ashoka">₹2,500</span>
+                            <span class="text-slate-500 text-sm ml-2">/ one-time charge</span>
+                        </div>
+                        <div class="mt-2 text-xs text-red-600 bg-red-50 p-2.5 rounded-lg border border-red-200 font-medium">
+                            <i class="fa-solid fa-circle-exclamation mr-1"></i> 
+                            <strong>Note:</strong> ₹2,500 covers <u>only</u> all legal drafting formats and telephone support. Official Government Fees must be paid separately by you directly at the Delhi office counter.
+                        </div>
+                    </div>
+
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span><strong>All Prescribed Formats:</strong> Stamp Paper Affidavit format, CD Proforma (.docx), CD Equivalence Certificate, and Local/National Newspaper Ad Text.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span><strong>Instant Email Delivery:</strong> All documents sent immediately to your email address after payment.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span><strong>Direct Telephonic Helpline (+91 8118802189):</strong> Call us anytime regarding file assembly, photo attestation, witness signatures, and counter timings.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-clock-rotate-left text-amber-600 mt-1"></i>
+                            <span><strong>Service Completion:</strong> The telephonic consultation service officially ends the moment your physical file is deposited at the Civil Lines counter.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-100">
+                    <button onclick="selectPackage(2500, 'Legal Formats Kit & Telephonic Guidance')" 
+                            class="w-full bg-ashoka hover:bg-ashokaDark text-amber-300 font-bold py-3.5 px-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                        <i class="fa-solid fa-file-pen"></i>
+                        <span>Book ₹2,500 Formats Package</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Complete VIP Plan: ₹9,999 -->
+            <div class="bg-white rounded-2xl border-2 border-goldAccent shadow-xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden">
+                <div class="absolute -right-12 top-6 bg-goldAccent text-ashokaDark font-bold text-xs px-12 py-1 rotate-45 uppercase tracking-wider shadow">
+                    VIP Concierge
+                </div>
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wide bg-amber-100 text-amber-900 px-3 py-1 rounded-full">End-to-End Assistance</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Complete Gazette Concierge Service</h3>
+                    <p class="text-xs text-slate-500 mt-1">Turnkey preparation of your hardcopy dossier, CD burning, and media publishing.</p>
+
+                    <div class="my-6">
+                        <div class="flex items-baseline">
+                            <span class="text-4xl font-extrabold text-ashoka">₹9,999</span>
+                            <span class="text-slate-500 text-sm ml-2">.00 (All-Inclusive Prep)</span>
+                        </div>
+                        <div class="mt-2 text-xs text-emerald-800 bg-emerald-50 p-2.5 rounded-lg border border-emerald-200">
+                            <i class="fa-solid fa-circle-check mr-1"></i> 
+                            Complete dossier ready for Delhi counter submission with zero rejection guarantee.
+                        </div>
+                    </div>
+
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span><strong>Full Document Drafting &amp; Hardcopy Binding:</strong> Custom drafting of all 7 statutory enclosures.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span><strong>Digital CD-R Burning:</strong> Pre-formatted, verified non-rewritable CD prepared strictly as per government specs.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span><strong>Newspaper Publication Handling:</strong> Placement of statutory change of name classified advertisement.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span><strong>Delhi Counter Submission Docket:</strong> Step-by-step counter token booking slip and guide for the applicant's visit.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-100">
+                    <button onclick="selectPackage(9999, 'Complete Gazette Concierge Service')" 
+                            class="w-full bg-goldAccent hover:bg-amber-400 text-ashokaDark font-bold py-3.5 px-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                        <i class="fa-solid fa-crown"></i>
+                        <span>Book ₹9,999 Complete Service</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INLINE APPLICATION FORM (OPEN ON PAGE DIRECTLY) -->
+    <section id="application-form-section" class="max-w-4xl mx-auto px-4 sm:px-6 py-12 scroll-mt-20">
+        <div class="bg-white rounded-3xl border-2 border-ashoka shadow-2xl p-6 sm:p-10 relative">
+            
+            <div class="border-b border-slate-200 pb-5 mb-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-ashoka text-amber-300 rounded-full flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl sm:text-2xl font-bold text-ashoka">Customer Application Form</h2>
+                        <p class="text-xs sm:text-sm text-slate-500">Fill your details below. Formats will be prepared and sent to your email.</p>
+                    </div>
+                </div>
+
+                <!-- Selected Package Banner -->
+                <div class="mt-4 bg-amber-50 border border-amber-300 rounded-xl p-3 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                    <div>
+                        <span class="text-xs uppercase tracking-wider font-semibold text-amber-800">Selected Package:</span>
+                        <div class="text-sm font-bold text-slate-900" id="formDisplayPackage">Legal Formats Kit &amp; Telephonic Guidance</div>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs uppercase tracking-wider font-semibold text-amber-800">Service Charge:</span>
+                        <div class="text-xl font-extrabold text-ashoka" id="formDisplayPrice">₹2,500</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Form -->
+            <form onsubmit="handleFormSubmit(event)" class="space-y-5">
+                
+                <!-- Gazette Type -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Gazette Application Type *</label>
+                    <select id="custAppType" required class="w-full text-sm border border-slate-300 rounded-xl p-3 focus:ring-2 focus:ring-ashoka outline-none bg-slate-50">
+                        <option value="Adult Change of Name">Adult Change of Name (18+ Years)</option>
+                        <option value="Minor Name Correction / Change">Minor Child Name Correction (Below 18)</option>
+                        <option value="Spelling Correction in Name / Surname">Spelling / Surname Correction in Records</option>
+                        <option value="Name Change After Marriage">Name Change After Marriage (Female)</option>
+                        <option value="Religion Change Declaration">Religion Change Declaration</option>
+                        <option value="Gender Change / Transgender Recognition">Gender Change / Transgender Recognition</option>
+                    </select>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Old Name -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Current Name (Old Name in Records) *</label>
+                        <input type="text" id="custOldName" required placeholder="e.g. SURESH KUMAR MEENA" class="w-full text-sm border border-slate-300 rounded-xl p-3 focus:ring-2 focus:ring-ashoka outline-none uppercase bg-slate-50">
+                    </div>
+                    <!-- New Name -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">New Proposed Name (To be in Gazette) *</label>
+                        <input type="text" id="custNewName" required placeholder="e.g. SURESH MEENA" class="w-full text-sm border border-slate-300 rounded-xl p-3 focus:ring-2 focus:ring-ashoka outline-none uppercase bg-slate-50">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Father's Name -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Father's / Husband's Full Name *</label>
+                        <input type="text" id="custFatherName" required placeholder="e.g. RAMESH CHAND MEENA" class="w-full text-sm border border-slate-300 rounded-xl p-3 focus:ring-2 focus:ring-ashoka outline-none uppercase bg-slate-50">
+                    </div>
+                    <!-- DOB -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Date of Birth *</label>
+                        <input type="date" id="custDob" required class="w-full text-sm border border-slate-300 rounded-xl p-3 focus:ring-2 focus:ring-ashoka outline-none bg-slate-50">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- WhatsApp -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">WhatsApp / Calling Number *</label>
+                        <input type="tel" id="custPhone" required placeholder="10-digit mobile number" maxlength="10" pattern="[0-9]{10}" class="w-full text-sm border border-slate-300 rounded-xl p-3 focus:ring-2 focus:ring-ashoka outline-none bg-slate-50">
+                    </div>
+                    <!-- Email -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Email Address (Formats sent here) *</label>
+                        <input type="email" id="custEmail" required placeholder="your.email@example.com" class="w-full text-sm border border-slate-300 rounded-xl p-3 focus:ring-2 focus:ring-ashoka outline-none bg-slate-50">
+                    </div>
+                </div>
+
+                <!-- Complete Address -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Complete Residential Address (With Tehsil, District, State &amp; PIN Code) *</label>
+                    <textarea id="custAddress" required rows="2" placeholder="House / Flat No., Village / Ward / Street, Tehsil, District, State, PIN Code" class="w-full text-sm border border-slate-300 rounded-xl p-3 focus:ring-2 focus:ring-ashoka outline-none bg-slate-50"></textarea>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">ID Proof Available *</label>
+                        <select id="custIdType" required class="w-full text-sm border border-slate-300 rounded-xl p-3 focus:ring-2 focus:ring-ashoka outline-none bg-slate-50">
+                            <option value="Aadhaar Card">Aadhaar Card</option>
+                            <option value="PAN Card">PAN Card</option>
+                            <option value="Passport">Passport</option>
+                            <option value="Voter ID Card">Voter ID Card</option>
+                            <option value="Driving License">Driving License</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Reason for Name Change</label>
+                        <input type="text" id="custReason" placeholder="e.g. Spelling error in 10th marksheet / Personal preference" class="w-full text-sm border border-slate-300 rounded-xl p-3 focus:ring-2 focus:ring-ashoka outline-none bg-slate-50">
+                    </div>
+                </div>
+
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-600 space-y-1.5">
+                    <p><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> I confirm that all names and personal details provided are true and accurate.</p>
+                    <p><i class="fa-solid fa-triangle-exclamation text-amber-600 mr-1.5"></i> <strong>Official Rule:</strong> Government Publishing Fees are paid separately by the applicant at the Civil Lines, Delhi counter.</p>
+                </div>
+
+                <button type="submit" class="w-full bg-ashoka hover:bg-ashokaDark text-amber-300 font-bold py-4 px-6 rounded-xl shadow-xl transition flex items-center justify-center gap-3 text-base sm:text-lg">
+                    <i class="fa-solid fa-lock text-goldAccent"></i>
+                    <span>Submit Details &amp; Proceed to Payment</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- State Gazette vs Central Gazette Comparison Section -->
+    <section class="bg-slate-100 py-12 px-4 sm:px-6 border-y border-slate-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-xs font-bold uppercase tracking-wider text-ashoka bg-white px-3 py-1 rounded-full border border-slate-300">Statutory Distinction</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-ashoka serif-heading mt-3">Difference: Central Gazette vs State Gazette</h2>
+                <p class="text-slate-600 text-sm mt-2">Why publishing in the Central Gazette of India is essential for lifetime pan-India validity.</p>
+            </div>
+
+            <div class="overflow-x-auto shadow-sm rounded-xl border border-slate-200 bg-white">
+                <table class="w-full text-left text-sm text-slate-700">
+                    <thead class="bg-ashoka text-white text-xs uppercase tracking-wider font-semibold">
+                        <tr>
+                            <th class="py-4 px-6">Evaluation Parameter</th>
+                            <th class="py-4 px-6 text-amber-300">The Gazette of India (Central Gazette)</th>
+                            <th class="py-4 px-6 text-slate-300">State Gazette (Rajpatra)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 font-bold text-ashoka">Publishing Authority</td>
+                            <td class="py-4 px-6 text-slate-800">Department of Publication, Ministry of Housing &amp; Urban Affairs, Govt of India (Civil Lines, Delhi)</td>
+                            <td class="py-4 px-6 text-slate-600">Respective State Government Printing Press (e.g. Jaipur, Lucknow, Patna)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 font-bold text-ashoka">Territorial Jurisdiction</td>
+                            <td class="py-4 px-6 font-semibold text-emerald-700">Pan-India &amp; Internationally Valid Across All Embassies &amp; High Commissions</td>
+                            <td class="py-4 px-6 text-slate-600">Primarily accepted within that specific state; often rejected outside the home state</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 font-bold text-ashoka">Passport Office (MEA) Mandate</td>
+                            <td class="py-4 px-6 font-semibold text-emerald-700">100% Mandatory &amp; Accepted by RPO/PSK for major change of name / alias update</td>
+                            <td class="py-4 px-6 text-red-600">Frequently disputed or rejected by Regional Passport Offices (MEA)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 font-bold text-ashoka">Central Government Exams (UPSC, SSC, Railways, Banking)</td>
+                            <td class="py-4 px-6 text-slate-800">Statutory standard proof for document verification (DV) without raising memos</td>
+                            <td class="py-4 px-6 text-slate-600">May require supplementary court affidavits during central document verification</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 font-bold text-ashoka">Official Portal &amp; Verification</td>
+                            <td class="py-4 px-6 text-slate-800">Weekly e-Gazette downloaded directly from central portal <code>egazette.gov.in</code> (Part-IV)</td>
+                            <td class="py-4 px-6 text-slate-600">Dispersed across regional state government portals, frequently difficult to verify online</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+        <div class="text-center mb-8">
+            <h2 class="text-2xl font-bold text-ashoka serif-heading">Frequently Asked Questions (FAQs)</h2>
+            <p class="text-slate-600 text-sm mt-1">Clear answers regarding procedures, fees, and submission requirements.</p>
+        </div>
+
+        <div class="space-y-4 text-sm">
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                <h3 class="font-bold text-ashoka text-base">What exactly do I get in the ₹2,500 service?</h3>
+                <p class="text-slate-600 mt-2 leading-relaxed">
+                    In the ₹2,500 service, you receive all legally compliant drafting formats delivered directly to your email (Stamp Paper Affidavit text, CD Proforma in .docx format, CD Equivalence Certificate, and the Newspaper Advertisement format). Additionally, you get direct telephonic support on <strong>8118802189</strong> to answer all queries regarding notary, printing, photo attestation, and counter procedure.
+                </p>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                <h3 class="font-bold text-ashoka text-base">Is the Government publishing fee included in ₹2,500?</h3>
+                <p class="text-slate-600 mt-2 leading-relaxed">
+                    <strong>No.</strong> The official Government Gazette fee is strictly separate. Under the updated Department of Publication guidelines, the applicant must physically visit the Civil Lines, Delhi office counter to submit the hardcopy file and pay the government fees directly at the departmental cash/challan counter.
+                </p>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                <h3 class="font-bold text-ashoka text-base">When does the telephone assistance service conclude?</h3>
+                <p class="text-slate-600 mt-2 leading-relaxed">
+                    Our dedicated telephonic consultation assists you with every step of preparing and assembling your file. As per our terms, <strong>the telephone consultation service concludes once you successfully deposit your physical file at the Civil Lines counter.</strong>
+                </p>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                <h3 class="font-bold text-ashoka text-base">Why do I have to go to the Delhi office physically?</h3>
+                <p class="text-slate-600 mt-2 leading-relaxed">
+                    As per recent directives from the Department of Publication, in-person physical submission ensures applicant verification, immediate fee receipt generation, and prevents dossier rejections caused by transit postal damages or incomplete submissions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Desk Details -->
+    <section class="bg-white py-12 px-4 sm:px-6 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-2xl font-bold text-ashoka serif-heading">Contact Details &amp; Office Locations</h2>
+                <p class="text-slate-600 text-sm mt-1">Get in touch directly via telephone, WhatsApp, or email.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Legal Advisory Desk -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-ashoka text-goldAccent flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-ashoka">Legal Consultation Office</h3>
+                            <p class="text-xs text-slate-500">Drafting, Formatting &amp; Telephonic Advisory</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed mb-4">
+                        <strong>Address:</strong> Sawai Madhopur, Rajasthan - 322001
+                    </p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-2 text-slate-700">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 w-5"></i>
+                            <span>WhatsApp / Mobile: <strong>+91 8118802189</strong></span>
+                        </div>
+                        <div class="flex items-center gap-2 text-slate-700">
+                            <i class="fa-solid fa-envelope text-blue-600 w-5"></i>
+                            <span>Official Email: <strong>mr.nkakhand@Gmail.com</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Govt Submission Counter -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-amber-500 text-slate-900 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-landmark-flag"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-ashoka">Government Submission Counter</h3>
+                            <p class="text-xs text-slate-500">Department of Publication (Physical Deposit Only)</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed mb-4">
+                        <strong>Official Counter:</strong> Controller of Publications, Behind Old Secretariat / Vidhan Sabha, Civil Lines, Delhi - 110054
+                    </p>
+                    <p class="text-xs text-slate-500">
+                        <strong>Timings:</strong> 10:00 AM to 03:00 PM (Monday to Friday, Gazetted Holidays excluded).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ashokaDark text-slate-400 text-xs py-8 px-4 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <div>
+                <p class="font-semibold text-slate-200">The Gazette of India Legal Consultancy Desk</p>
+                <p class="text-slate-400 mt-1">Contact Address: Sawai Madhopur, Rajasthan - 322001 | Email: mr.nkakhand@Gmail.com</p>
+            </div>
+            <div>
+                <p>Helpline / WhatsApp: <span class="text-amber-400 font-bold">+91 8118802189</span></p>
+                <p class="text-[11px] text-slate-400 mt-0.5">&copy; All rights reserved. Professional legal drafting &amp; consultation service.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PAYMENT MODAL (Appears smoothly after form submission) -->
+    <div id="paymentModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl relative my-8">
+            <button onclick="closePaymentModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-2xl font-bold">&times;</button>
+            
+            <div class="text-center mb-5">
+                <div class="w-12 h-12 bg-ashoka text-amber-300 rounded-full flex items-center justify-center mx-auto mb-2 text-xl font-bold">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <h3 class="text-lg font-bold text-ashoka">Payment Gateway</h3>
+                <p class="text-xs text-slate-500">Scan &amp; Pay to receive files on Email</p>
+            </div>
+
+            <!-- Customer Summary Box -->
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-3.5 mb-4 text-xs text-slate-700 space-y-1">
+                <div class="flex justify-between">
+                    <span class="text-slate-500">Applicant:</span>
+                    <strong class="text-slate-900" id="summaryCustName">-</strong>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-500">Email:</span>
+                    <span class="text-slate-900 font-medium" id="summaryCustEmail">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-500">WhatsApp:</span>
+                    <span class="text-slate-900 font-medium" id="summaryCustPhone">-</span>
+                </div>
+                <div class="flex justify-between pt-2 border-t border-slate-200 text-sm">
+                    <span class="font-bold text-ashoka">Amount to Pay:</span>
+                    <span class="text-lg font-extrabold text-emerald-700" id="summaryPayAmount">₹2,500</span>
+                </div>
+            </div>
+
+            <!-- UPI Payment Simulator -->
+            <div class="border border-slate-200 rounded-xl p-4 text-center mb-4 bg-emerald-50/50">
+                <p class="text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Scan &amp; Pay via Any UPI App</p>
+                <div class="w-36 h-36 mx-auto bg-white border-2 border-dashed border-emerald-400 rounded-lg flex flex-col items-center justify-center shadow-inner">
+                    <i class="fa-solid fa-qrcode text-5xl text-slate-800"></i>
+                    <span class="text-[10px] text-slate-500 mt-1 font-mono">UPI QR Active</span>
+                </div>
+                <p class="text-xs text-slate-600 mt-2 font-mono">UPI ID: <strong>8118802189@upi</strong></p>
+            </div>
+
+            <button onclick="confirmFinalPayment()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl transition shadow flex items-center justify-center gap-2">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Confirm Payment Done</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- SUCCESS NOTIFICATION MODAL -->
+    <div id="successModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 text-center shadow-2xl">
+            <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl font-bold">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Application Submitted!</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed" id="successMessageDetails">
+                All legal drafting formats and instructions have been dispatched to your email.
+            </p>
+
+            <div class="my-5 p-4 bg-slate-50 rounded-xl text-left border border-slate-200 text-xs space-y-2">
+                <div><strong>Drafting Desk:</strong> Sawai Madhopur, Rajasthan - 322001</div>
+                <div><strong>Direct Helpline:</strong> +91 8118802189</div>
+                <div><strong>Official Email:</strong> mr.nkakhand@Gmail.com</div>
+                <div class="text-amber-700 pt-1 border-t border-slate-200">
+                    * Please proceed to Civil Lines, Delhi counter for physical hardcopy deposit and government fee payment.
+                </div>
+            </div>
+
+            <button onclick="closeSuccessModal()" class="w-full bg-ashoka text-white font-bold py-2.5 rounded-xl text-sm">
+                Done / Close
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Handlers -->
+    <script>
+        let currentPackageAmount = 2500;
+        let currentPackageTitle = "Legal Formats Kit & Telephonic Guidance";
+        let customerData = {};
+
+        // Function called when customer clicks Book 2500 or Book 9999
+        function selectPackage(amount, title) {
+            currentPackageAmount = amount;
+            currentPackageTitle = title;
+            
+            // Update on-page form banner
+            document.getElementById('formDisplayPackage').innerText = title;
+            document.getElementById('formDisplayPrice').innerText = '₹' + amount.toLocaleString('en-IN');
+            
+            // Smoothly scroll down to the form
+            const formSection = document.getElementById('application-form-section');
+            formSection.scrollIntoView({ behavior: 'smooth' });
+            
+            // Focus on first input
+            setTimeout(() => {
+                document.getElementById('custOldName').focus();
+            }, 600);
+        }
+
+        // Form Submit
+        function handleFormSubmit(e) {
+            e.preventDefault();
+
+            // Collect Data
+            customerData = {
+                appType: document.getElementById('custAppType').value,
+                oldName: document.getElementById('custOldName').value.trim(),
+                newName: document.getElementById('custNewName').value.trim(),
+                fatherName: document.getElementById('custFatherName').value.trim(),
+                dob: document.getElementById('custDob').value,
+                phone: document.getElementById('custPhone').value.trim(),
+                email: document.getElementById('custEmail').value.trim(),
+                address: document.getElementById('custAddress').value.trim(),
+                idType: document.getElementById('custIdType').value,
+                reason: document.getElementById('custReason').value.trim()
+            };
+
+            // Show Payment Modal
+            document.getElementById('summaryCustName').innerText = customerData.newName + " (formerly " + customerData.oldName + ")";
+            document.getElementById('summaryCustEmail').innerText = customerData.email;
+            document.getElementById('summaryCustPhone').innerText = customerData.phone;
+            document.getElementById('summaryPayAmount').innerText = '₹' + currentPackageAmount.toLocaleString('en-IN');
+
+            document.getElementById('paymentModal').classList.remove('hidden');
+        }
+
+        function closePaymentModal() {
+            document.getElementById('paymentModal').classList.add('hidden');
+        }
+
+        function confirmFinalPayment() {
+            closePaymentModal();
+
+            document.getElementById('successMessageDetails').innerHTML = 
+                `Thank you <strong>${customerData.newName}</strong>! Your application details have been saved. All official Central Gazette drafting formats, CD Proforma, and counter instructions have been dispatched to <strong>${customerData.email}</strong>. For any phone guidance before visiting the Delhi counter, call us at <strong>8118802189</strong>.`;
+            
+            document.getElementById('successModal').classList.remove('hidden');
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('successModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
